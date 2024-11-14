@@ -16,12 +16,20 @@
 
   --text-color-primary: #f1f5f9;
   --text-color-secondary: #cbd5e1;
+
+  --font-family: "Archivo", sans-serif;
+  --h1: 800 24px/135% var(--font-family);
+  --h2: 800 16px/140% var(--font-family);
+  --h3: 800 14px/140% var(--font-family);
+  --text-span: 600 14px/145% var(--font-family);
+  --text: 400 16px/140% var(--font-family);
+  --text-sm: 400 14px/160% var(--font-family);
 }
 
 body {
-  font-size: 1.6rem;
-  font-family: "Archivo", sans-serif;
+  font: var(--text);
   background: var(--bg-color);
+  color: var(--text-color-primary);
 }
 
 .container {
@@ -41,38 +49,16 @@ body {
   border-width: 0;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+  &:hover{
+    color: var(--brand-color-light);
+  }
+}
+
 h1,
 h2,
-h3 {
-  font-weight: 800;
-}
-
-h1 {
-  font-size: 2.4rem;
-  line-height: 135%;
-}
-
-h2 {
-  font-size: 1.6rem;
-  line-height: 140%;
-}
-
-h3,
-span,
-p {
-  font-size: 1.4rem;
-}
-
-h3 {
-  line-height: 140%;
-}
-
-span {
-  line-height: 145%;
-  font-weight: 600;
-}
-
-p {
-  line-height: 160%;
-  font-weight: 400;
+h3{
+  font: inherit;
 }
